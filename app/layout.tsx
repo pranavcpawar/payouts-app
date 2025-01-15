@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Payouts",
-    template: "%s | Payouts",
+    template: "%s · Payouts",
   },
   description: "An app to manage your payouts",
   applicationName: "Payouts",
