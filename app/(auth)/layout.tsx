@@ -1,3 +1,4 @@
+import { HomeButton } from "@/components/home-button";
 import { Geist, Unbounded } from "next/font/google";
 
 const unbounded = Unbounded({
@@ -16,9 +17,12 @@ export default function AuthLayout({
 }) {
   return (
     <div
-      className={`flex flex-col items-start justify-center h-dvh w-full mx-auto ${unbounded.variable} ${geist.variable}`}
+      className={`flex flex-col items-start justify-center h-dvh p-2 w-full mx-auto ${unbounded.variable} ${geist.variable}`}
     >
-      <div className="mt-2 max-w-md mx-auto w-full h-full">{children}</div>
+      <HomeButton className="rounded-full font-[family-name:var(--font-geist-sans)] font-semibold">
+        Home
+      </HomeButton>
+      <div className="p-2 max-w-lg mx-auto w-full h-full">{children}</div>
     </div>
   );
 }
