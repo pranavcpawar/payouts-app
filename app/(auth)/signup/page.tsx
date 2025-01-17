@@ -30,6 +30,13 @@ export default async function Signup() {
             Welcome to Payouts
           </CardTitle>
           <CardDescription className="font-[family-name:var(--font-geist-sans)] ml-1">
+            <h3 className="mb-2">
+              Already have an account?{" "}
+              <span className="hover:cursor-pointer text-tnc font-medium">
+                <a href="/login">Log in</a>
+              </span>
+              .
+            </h3>
             Create an account and start using payouts now.
           </CardDescription>
         </CardHeader>

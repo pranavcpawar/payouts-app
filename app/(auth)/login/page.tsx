@@ -30,6 +30,13 @@ export default async function Login() {
             Log in to Payouts
           </CardTitle>
           <CardDescription className="font-[family-name:var(--font-geist-sans)] ml-1">
+            <h3 className="mb-2">
+              Don&apos;t have an account?{" "}
+              <span className="hover:cursor-pointer text-tnc font-medium">
+                <a href="/signup">Sign up</a>
+              </span>
+              .
+            </h3>
             Enter your email to login to your account.
           </CardDescription>
         </CardHeader>
