@@ -29,7 +29,7 @@ export default async function Signup() {
           <CardTitle className="text-3xl font-bold font-[family-name:var(--font-unbounded)]">
             Welcome to Payouts
           </CardTitle>
-          <CardDescription className="font-[family-name:var(--font-geist-sans)] ml-1">
+          <CardDescription className="font-[family-name:var(--font-geist-sans)]">
             <h3 className="mb-2">
               Already have an account?{" "}
               <span className="hover:cursor-pointer text-tnc font-medium">
@@ -43,7 +43,7 @@ export default async function Signup() {
         <CardContent className="font-[family-name:var(--font-geist-sans)]">
           <SignUpForm />
         </CardContent>
-        <CardFooter className="ml-1">
+        <CardFooter>
           <p className="text-center text-sm font-[family-name:var(--font-geist-sans)]">
             By signing up, you agree to our{" "}
             <span className="hover:cursor-pointer font-semibold text-tnc">
