@@ -106,8 +106,12 @@ export function RegistrationForm() {
             </FormItem>
           )}
         />
-        <LoaderButton isLoading={false} className="w-full" type="submit">
-          Sign up
+        <LoaderButton
+          isLoading={false}
+          className="w-full font-semibold"
+          type="submit"
+        >
+          Create account
         </LoaderButton>
       </form>
     </Form>

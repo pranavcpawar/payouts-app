@@ -10,7 +10,7 @@ import Image from "next/image";
 import { SignUpForm } from "@/app/(auth)/signup/signup-form";
 
 export const metadata = {
-  title: "Sign Up",
+  title: "Sign up",
 };
 
 export default async function Signup() {
@@ -38,7 +38,7 @@ export default async function Signup() {
         </CardContent>
         <CardFooter className="ml-1">
           <p className="text-center text-sm font-[family-name:var(--font-geist-sans)]">
-            By signing in, you agree to our{" "}
+            By signing up, you agree to our{" "}
             <span className="hover:cursor-pointer font-semibold text-tnc">
               Terms
             </span>{" "}
