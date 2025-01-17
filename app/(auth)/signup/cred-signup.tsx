@@ -48,8 +48,9 @@ export function RegistrationForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
         <FormField
+          key="email"
           control={form.control}
           name="email"
           render={({ field }) => (
@@ -69,6 +70,7 @@ export function RegistrationForm() {
           )}
         />
         <FormField
+          key="password"
           control={form.control}
           name="password"
           render={({ field }) => (
@@ -88,10 +90,11 @@ export function RegistrationForm() {
           )}
         />
         <FormField
+          key="passwordConfirmation"
           control={form.control}
           name="passwordConfirmation"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="pb-1">
               <FormLabel>Confirm Password</FormLabel>
               <FormControl>
                 <Input

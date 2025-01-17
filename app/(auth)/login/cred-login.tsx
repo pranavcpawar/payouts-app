@@ -38,8 +38,9 @@ export function CredsLoginForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
         <FormField
+          key="email"
           control={form.control}
           name="email"
           render={({ field }) => (
@@ -59,10 +60,11 @@ export function CredsLoginForm() {
           )}
         />
         <FormField
+          key="password"
           control={form.control}
           name="password"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="pb-1">
               <FormLabel>Password</FormLabel>
               <FormControl>
                 <Input
