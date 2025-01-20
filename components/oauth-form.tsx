@@ -37,15 +37,15 @@ export function OAuthForm({ title }: { title: string }) {
     <div className="flex flex-row w-full gap-4 font-[family-name:var(--font-geist-sans)]">
       <LoginButton
         title={`${title} with Google`}
-        variant="default"
+        variant="outline"
         icon={FaGoogle}
-        className="w-full h-10"
+        className="w-full h-10 font-semibold"
       />
       <LoginButton
         title={`${title} with GitHub`}
-        variant="default"
+        variant="outline"
         icon={FaGithub}
-        className="w-full h-10"
+        className="w-full h-10 font-semibold"
       />
     </div>
   );
