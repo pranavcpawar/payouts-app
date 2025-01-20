@@ -39,13 +39,13 @@ export function OAuthForm({ title }: { title: string }) {
         title={`${title} with Google`}
         variant="outline"
         icon={FaGoogle}
-        className="w-full h-10"
+        className="w-full h-10 font-semibold"
       />
       <LoginButton
         title={`${title} with GitHub`}
         variant="outline"
         icon={FaGithub}
-        className="w-full h-10"
+        className="w-full h-10 font-semibold"
       />
     </div>
   );
